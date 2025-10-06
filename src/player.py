@@ -6,7 +6,7 @@ from bullet import Bullet
 class Player:
     def __init__(self):
         self.image = pygame.image.load(os.path.join(PNGS_DIR, "player.png")).convert_alpha()
-        self.rect = self.image.get_rect(center=(100, HEIGHT//2))
+        self.rect = self.image.get_rect(center=(50, HEIGHT//4))
         self.speed = PLAYER_SPEED
         self.lives = 3
         self.bullets = []
